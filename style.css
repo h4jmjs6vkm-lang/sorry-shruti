@@ -230,8 +230,6 @@ opacity:.75;
 
 .body{
 
-.body{
-
 position:absolute;
 
 bottom:0;
@@ -435,24 +433,9 @@ bottom:100px;
     display:none !important;
 }
 #envelopeSection{
-    display:flex;
+    display:none;
 }
 
 #letterSection{
     display:none;
-}
-
-#intro{
-    display:flex;
-}
-#envelopeSection{
-    display:flex;
-}
-
-#letterSection{
-    display:none;
-}
-
-#intro{
-    display:flex;
 }
