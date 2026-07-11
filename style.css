@@ -434,3 +434,25 @@ bottom:100px;
 .hidden{
     display:none !important;
 }
+#envelopeSection{
+    display:flex;
+}
+
+#letterSection{
+    display:none;
+}
+
+#intro{
+    display:flex;
+}
+#envelopeSection{
+    display:flex;
+}
+
+#letterSection{
+    display:none;
+}
+
+#intro{
+    display:flex;
+}
