@@ -1,7 +1,4 @@
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
-
-/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap');
 
 *{
 margin:0;
@@ -9,19 +6,15 @@ padding:0;
 box-sizing:border-box;
 }
 
-/* Body */
-
 body{
 
 font-family:'Poppins',sans-serif;
 
-height:100vh;
+background:#050816;
 
 overflow:hidden;
 
-background:#050816;
-
-color:white;
+height:100vh;
 
 display:flex;
 
@@ -29,11 +22,9 @@ justify-content:center;
 
 align-items:center;
 
-position:relative;
+color:white;
 
 }
-
-/* Animated Background */
 
 .background{
 
@@ -48,15 +39,13 @@ width:100%;
 height:100%;
 
 background:
-radial-gradient(circle at top,#16213e 0%,#050816 70%);
+radial-gradient(circle at top,#14213d,#050816 70%);
 
 overflow:hidden;
 
 z-index:-2;
 
 }
-
-/* Stars */
 
 .background::before{
 
@@ -69,178 +58,107 @@ width:100%;
 height:100%;
 
 background-image:
-
 radial-gradient(white 1px,transparent 1px);
 
 background-size:45px 45px;
 
-opacity:.20;
+opacity:.18;
 
-animation:moveStars 80s linear infinite;
+animation:stars 80s linear infinite;
 
 }
 
-@keyframes moveStars{
+@keyframes stars{
 
-0%{
-
+from{
 transform:translateY(0);
-
 }
 
-100%{
-
-transform:translateY(-800px);
-
+to{
+transform:translateY(-700px);
 }
 
 }
 
-/* Main Container */
+.hidden{
 
-.container{
+display:none;
 
-width:90%;
+}
 
-max-width:760px;
+#intro{
 
 text-align:center;
 
-animation:fadeIn 2s ease;
+animation:fade 2s ease;
 
 }
 
-/* Heading */
-
-.hello{
+#intro h1{
 
 font-family:'Playfair Display',serif;
 
-font-size:3.2rem;
+font-size:3rem;
 
-font-weight:700;
+margin-bottom:15px;
+
+}
+
+.line{
+
+font-size:1.2rem;
+
+opacity:.9;
 
 margin-bottom:12px;
 
-letter-spacing:1px;
-
 }
 
-/* Subtitle */
+.line2{
 
-.subtitle{
+opacity:.7;
 
-font-size:1.1rem;
-
-opacity:.75;
-
-margin-bottom:35px;
+margin-bottom:40px;
 
 }
-
-/* Letter Card */
-
-.letter{
-
-background:rgba(255,255,255,.08);
-
-backdrop-filter:blur(22px);
-
--webkit-backdrop-filter:blur(22px);
-
-border:1px solid rgba(255,255,255,.15);
-
-border-radius:30px;
-
-padding:45px;
-
-box-shadow:
-
-0 0 60px rgba(255,255,255,.08),
-
-0 0 100px rgba(0,0,0,.30);
-
-transition:.4s;
-
-}
-
-/* Hover */
-
-.letter:hover{
-
-transform:translateY(-4px);
-
-}
-
-/* Letter Title */
-
-.letter h2{
-
-font-size:2rem;
-
-margin-bottom:25px;
-
-}
-
-/* Text */
-
-#text{
-
-font-size:1.08rem;
-
-line-height:2;
-
-min-height:220px;
-
-white-space:pre-line;
-
-}
-
-/* Button */
 
 button{
 
-margin-top:35px;
-
-padding:16px 40px;
+padding:15px 35px;
 
 border:none;
 
-border-radius:50px;
-
-font-size:1rem;
-
-font-weight:600;
+border-radius:40px;
 
 background:white;
 
 color:#111;
 
+font-weight:600;
+
 cursor:pointer;
 
 transition:.35s;
 
-box-shadow:0 10px 25px rgba(255,255,255,.18);
+font-size:1rem;
 
 }
 
 button:hover{
 
-transform:scale(1.07);
+transform:scale(1.05);
 
-box-shadow:0 15px 40px rgba(255,255,255,.28);
+box-shadow:0 10px 30px rgba(255,255,255,.25);
 
 }
 
-/* Fade */
-
-@keyframes fadeIn{
+@keyframes fade{
 
 from{
 
 opacity:0;
 
-transform:translateY(30px);
+transform:translateY(20px);
 
 }
 
@@ -249,44 +167,6 @@ to{
 opacity:1;
 
 transform:translateY(0);
-
-}
-
-}
-
-/* Mobile */
-
-@media(max-width:768px){
-
-.hello{
-
-font-size:2.3rem;
-
-}
-
-.subtitle{
-
-font-size:1rem;
-
-}
-
-.letter{
-
-padding:28px;
-
-}
-
-#text{
-
-font-size:1rem;
-
-line-height:1.8;
-
-}
-
-button{
-
-width:100%;
 
 }
 
