@@ -88,6 +88,17 @@ display:none;
 
 #intro{
 
+width:100%;
+height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
 text-align:center;
 
 animation:fade 2s ease;
@@ -176,11 +187,20 @@ transform:translateY(0);
 ========================== */
 
 #envelopeSection{
+
+width:100%;
+height:100vh;
+
 display:flex;
+
 flex-direction:column;
+
 justify-content:center;
+
 align-items:center;
+
 animation:fade 1s ease;
+
 }
 
 .message{
@@ -347,5 +367,67 @@ transform:rotateX(180deg);
 #envelope.open .letter{
 
 bottom:120px;
+
+}
+/* ==========================
+   LETTER SECTION
+========================== */
+
+#letterSection{
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    animation:fade 1s ease;
+}
+
+.paper{
+
+    width:min(90%,700px);
+
+    background:white;
+
+    color:#333;
+
+    padding:50px;
+
+    border-radius:18px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+
+    text-align:left;
+
+}
+
+.paper h1{
+
+    font-family:'Playfair Display',serif;
+
+    margin-bottom:25px;
+
+    color:#111;
+
+}
+
+.paper p{
+
+    line-height:1.9;
+
+    white-space:pre-line;
+
+    font-size:1.05rem;
+
+    transition:.3s;
+
+    min-height:260px;
+
+}
+
+.paper button{
+
+    margin-top:35px;
 
 }
