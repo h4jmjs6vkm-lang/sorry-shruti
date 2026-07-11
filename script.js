@@ -109,7 +109,9 @@ let current = 0;
 const text = document.getElementById("text");
 const btn = document.getElementById("nextBtn");
 
-text.innerHTML = pages[current];
+window.onload = () => {
+    text.innerHTML = pages[current];
+};
 
 btn.onclick = () => {
 
