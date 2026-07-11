@@ -13,9 +13,8 @@ document.getElementById("envelope").onclick = () => {
 
     setTimeout(() => {
 
-        envelopeSection.classList.add("hidden");
-        letterSection.classList.remove("hidden");
-
+        envelopeSection.style.display = "none";
+        letterSection.style.display = "flex";
     },1200);
 
 };
