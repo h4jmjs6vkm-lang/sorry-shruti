@@ -217,17 +217,11 @@ margin-bottom:10px;
 opacity:.75;
 }
 
-#envelope{
+#envelope {
 
-position:relative;
+    position: relative;
 
-width:320px;
-
-height:220px;
-
-cursor:pointer;
-
-transition:.8s;
+    z-index: 1;
 
 }
 
