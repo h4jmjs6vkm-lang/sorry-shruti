@@ -1,3 +1,24 @@
+const intro = document.getElementById("intro");
+const envelopeSection = document.getElementById("envelopeSection");
+const letterSection = document.getElementById("letterSection");
+
+document.getElementById("showEnvelope").onclick = () => {
+    intro.classList.add("hidden");
+    envelopeSection.classList.remove("hidden");
+};
+
+document.getElementById("envelope").onclick = () => {
+
+    document.getElementById("envelope").classList.add("open");
+
+    setTimeout(() => {
+
+        envelopeSection.classList.add("hidden");
+        letterSection.classList.remove("hidden");
+
+    },1200);
+
+};
 const pages = [
 
 `When I read your message...
