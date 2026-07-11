@@ -2,70 +2,89 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Letter For Shruti 🌸</title>
 
-<meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
-<title>A Letter For Shruti 🌸</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="stars"></div>
+    <!-- Background -->
+    <div class="background"></div>
 
-<div class="intro">
+    <!-- Intro -->
+    <section id="intro">
 
-<h1>Hi Shruti 🌸</h1>
+        <h1>Hi Shruti 🌸</h1>
 
-<p>This isn't another apology...</p>
+        <p class="line">
+            This isn't another apology...
+        </p>
 
-<p class="small">
-Some conversations deserve more than a text.
-</p>
+        <p class="line2">
+            Some conversations deserve more than a text.
+        </p>
 
-</div>
+        <button id="showEnvelope">
+            Continue ❤️
+        </button>
 
-<div class="envelope-container">
+    </section>
 
-<div id="envelope">
+    <!-- Envelope -->
 
-<div class="flap"></div>
+    <section id="envelopeSection" class="hidden">
 
-<div class="letter">
+        <div class="message">
 
-<h2>💌</h2>
+            <h2>💌</h2>
 
-<p>Tap the envelope to open your letter</p>
+            <p>Tap the envelope to open your letter</p>
 
-</div>
+        </div>
 
-</div>
+        <div id="envelope">
 
-</div>
+            <div class="top"></div>
 
-<div id="letterPage">
+            <div class="body"></div>
 
-<h1>🌸 A Letter For You</h1>
+            <div class="letter">
 
-<p id="text"></p>
+                <h2>A Letter For You 🌸</h2>
 
-<button id="nextBtn">
-Continue →
-</button>
+            </div>
 
-</div>
+        </div>
 
-<script src="script.js"></script>
+    </section>
+
+    <!-- Letter -->
+
+    <section id="letterSection" class="hidden">
+
+        <div class="paper">
+
+            <h1>Dear Shruti,</h1>
+
+            <p id="text"></p>
+
+            <button id="nextBtn">
+                Continue →
+            </button>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
 
 </body>
 
